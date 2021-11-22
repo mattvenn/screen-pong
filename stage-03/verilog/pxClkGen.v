@@ -44,6 +44,7 @@ module pxClkGen #(
 //
 //FILTER_RANGE: 1 (3'b001)
 //
+/*
 SB_PLL40_CORE #(.FEEDBACK_PATH("SIMPLE"),
                 .PLLOUT_SELECT("GENCLK"),
                 .DIVR(4'd0),
@@ -58,5 +59,6 @@ SB_PLL40_CORE #(.FEEDBACK_PATH("SIMPLE"),
                 .RESETB(1'b1),
                 .BYPASS(1'b0)
         );
-
+        */
+    assign px_clk = sys_clk;
 endmodule
